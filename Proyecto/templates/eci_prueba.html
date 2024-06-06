@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de ECI</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <header id="encabezado" >
+        <div class="container" style="background-color: teal;">
+            <h4>Diseño de información - ECI</h4>
+        </div>
+        <div id="usuario">
+                <div>
+                    <label for="doctor">Usuario: </label>
+                    <input type="text" name="doctor" id="doctor">
+                </div>
+                <div>
+                    <label for="consultorio">Consultorio</label>
+                    <input type="text" name="consultorio" id="consultorio">
+                </div>
+                <div>
+                    <label for="turno">Turno</label>
+                    <input type="text" name="turnop" id="turno">
+                </div>
+                <div>
+                    <label for="delegacion">Delegación</label>
+                    <input type="text" name="delegacion" id="delegacion">
+                </div>
+            </div>
+            <div id="fecha">
+                <div>
+                    <label for="dia">Día</label>
+                    <input type="text" name="dia" id="dia">
+                </div>
+                <div>
+                    <label for="fecha">Fecha</label>
+                    <input type="text" name="fecha" id="fecha">
+                </div>
+                <div>
+                    <label for="hora">Hora:</label>
+                    <input type="text" name="hora" id="hora">
+                </div>
+                <div>
+                    <label for="umf">Unidad Médica Familiar</label>
+                    <input type="text" name="umf" id="umf">
+                </div>
+            </div>
+    </header>
+    <main id="contenido">
+        <div>
+            <h3>Antecedentes de Enfermedades Comunes de la Infancia</h3>
+        </div>
+        <div>
+            <h4>Paciente</h4>
+        </div>
+        <div id="paciente">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+
+            <label for="edad">Edad</label>
+            <input type="text" name="edad" id="edad">
+
+            <label for="sexo">Sexo</label>
+            <input type="text" name="sexo" id="sexo">
+
+            <label for="nss">NSS</label>
+            <input type="text" name="nss" id="nss">
+
+            <label for="consultorio">Consultorio</label>
+            <input type="text" name="consultorio" id="consultorio">
+
+            <label for="medico">A. Médico</label>
+            <input type="text" name="medico" id="medico">
+        </div>
+        <div id="insertar">
+            <div>
+                <h4>Enfermedades Comunes de la Infancia</h4>
+            </div>
+            <div>
+                <label for="enfermedad">Enfermedad: </label>
+                <input type="checkbox" name="enfermedad" id="enfermedad">
+            </div>
+            <div>
+                <label for="otra">Otra enfermedad: </label>
+                <input type="checkbox" name="otra" id="otra">
+            </div>
+            <div>
+                <label for="edad_remota">Edad: </label>
+                <input type="text" name="edad_remota" id="edad_remota">
+            </div>
+            <div>
+                <label for="descripcion">Descripción: </label>
+                <select name="descripcion" id="descripcion">
+                    <option value="">-Selecciona-</option>
+                </select>
+            </div>
+            <div>
+                <label for="agregar">Agregar</label>
+                <input type="button" value="+">
+            </div>
+        </div>
+        <div id="listado">
+            <div>
+                <div>
+                    <label for="enfermedad">Enfermedad</label>
+                </div>
+                <div>
+                    <label for="edad_remota">Edad</label>
+                </div>
+            </div>
+            <div>
+                <ul>
+                    <li>No hay existentes</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+

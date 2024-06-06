@@ -1,0 +1,149 @@
+{% extends './base.html' %}
+
+{% block title %} CADIMSS - Adicciones {% endblock %}
+
+{% block body %}
+<h1>Adicciones</h1>
+<div class="row border-bottom" id="usuario" style="background-color: lightgray;">
+    <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+        <label for="doctor">Usuario: </label>
+        <input type="text" name="doctor" id="doctor" style="background-color: lightgray;" class="border border-0">
+    </div>
+    <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+        <label for="consultorio">Consultorio: </label>
+        <input type="text" name="consultorio" id="consultorio" style="background-color: lightgray;" class="border border-0">
+    </div>
+    <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+        <label for="turno">Turno: </label>
+        <input type="text" name="turno" id="turno" style="background-color: lightgray;" class="border border-0">
+    </div>
+    <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+        <label for="delegacion">Delegación: </label>
+        <input type="text" name="delegacion" id="delegacion" style="background-color: lightgray;" class="border border-0">
+    </div>
+</div>
+
+<div class="row border-bottom" id="fecha" style="background-color: lightgray;">
+    <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+        <label for="dia">Día: </label>
+        <input type="text" name="dia" id="dia" style="background-color: lightgray;" class="border border-0">
+    </div>
+    <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+        <label for="fecha">Fecha: </label>
+        <input type="text" name="fecha" id="fecha" style="background-color: lightgray;" class="border border-0">
+    </div>
+    <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+        <label for="hora">Hora: </label>
+        <input type="text" name="hora" id="hora" style="background-color: lightgray;" class="border border-0">
+    </div>
+    <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+        <label for="umf">UMF: </label>
+        <input type="text" name="umf" id="umf" style="background-color: lightgray;" class="border border-0">
+    </div>
+</div>
+
+<main id="contenido">
+    <div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="{{ url_for('url_eci')}}">ECI</a>
+                    <a class="nav-link" href="{{ url_for('url_pp')}}">Médicos</a>
+                    <a class="nav-link" href="{{ url_for('url_quiru')}}">Quirúrgicos</a>
+                    <a class="nav-link" href="{{ url_for('url_trauma')}}">Traumáticos</a>
+                    <a class="nav-link" href="{{ url_for('url_trans')}}">Transfusionales</a>
+                    <a class="nav-link" href="{{ url_for('url_aler')}}">Alergias</a>
+                    <a class="navbar-brand active" aria-current="page" href="{{ url_for('url_adic')}}">Adicciones</a>
+                </div>
+            </div>
+          </nav>
+    </div>
+
+    <div>
+        <div class="text-end">
+            <h5>
+                ANTECEDENTES DE ADICCIONES
+            </h5>
+        </div>
+
+        <div style="background-color: teal;" class="text-white">
+            <h5>
+                Paciente
+            </h5>
+        </div>
+
+        <div class="row" id="paciente" >
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <label for="nombre_completo">Nombre: </label>
+                <input type="text" name="nombre_completo" id="nombre_completo">
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                <label for="edad">Edad: </label>
+                <input type="text" name="edad" id="edad">
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                <label for="sexo">Sexo: </label>
+                <input type="text" name="sexo" id="sexo">
+            </div>
+        </div>
+        <div class="row" id="paciente">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <label for="nss">NSS: </label>
+                <input type="text" name="nss" id="nss">
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <label for="consultorio">Consultorio: </label>
+                <input type="text" name="consultorio" id="consultorio">
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <label for="medico">A. Médico</label>
+                <input type="text" name="medico" id="medico">
+            </div>
+        </div>
+
+        <div class="text-success" style="background-color: lightgray;">
+            <h5>: : Adicciones : :</h5>
+        </div>
+
+        <div class="row" id="enfermedad">
+            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                <label for="enfermedad">Adicción</label>
+                <input type="checkbox" name="enfermedad" id="enfermedad">
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                <label for="otra">Otra adicción</label>
+                <input type="checkbox" name="otra" id="otra">
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                <label for="edad_remota">Edad: </label>
+                <input type="text" name="edad_remota" id="edad_remota">
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                <label for="agregar">Agregar </label>
+                <button type="submit" class="btn btn-warning"></button>
+            </div>
+        </div>
+
+        <div class="row" id="listas">
+            <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8" style="background-color: lightgray;">
+                <h5 class="text-center text-success">Adicción</h5>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4" style="background-color: lightgray;">
+                <h5 class="text-center text-success">Edad</h5>
+            </div>
+        </div>
+        <div class="row" id="listado">
+            <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                <ul class="list-group">
+
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <ul class="list-group">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

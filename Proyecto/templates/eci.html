@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+</head>
+<body>
+    <header id="encabezado">
+        <div class="text-center" style="background-color: teal;"><h4>Información médica del paciente - ECI</h4></div>
+        <div class="container">
+            <div class="row border-bottom" id="usuario" style="background-color: lightgray;">
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <label for="doctor">Usuario: </label>
+                    <input type="text" name="doctor" id="doctor" style="background-color: lightgray;" class="border border-0">
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <label for="consultorio">Consultorio: </label>
+                    <input type="text" name="consultorio" id="consultorio" style="background-color: lightgray;" class="border border-0">
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <label for="turno">Turno: </label>
+                    <input type="text" name="turno" id="turno" style="background-color: lightgray;" class="border border-0">
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <label for="delegacion">Delegación: </label>
+                    <input type="text" name="delegacion" id="delegacion" style="background-color: lightgray;" class="border border-0">
+                </div>
+            </div>
+
+            <div class="row border-bottom" id="fecha" style="background-color: lightgray;">
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <label for="dia">Día: </label>
+                    <input type="text" name="dia" id="dia" style="background-color: lightgray;" class="border border-0">
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <label for="fecha">Fecha: </label>
+                    <input type="text" name="fecha" id="fecha" style="background-color: lightgray;" class="border border-0">
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <label for="hora">Hora: </label>
+                    <input type="text" name="hora" id="hora" style="background-color: lightgray;" class="border border-0">
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <label for="umf">UMF: </label>
+                    <input type="text" name="umf" id="umf" style="background-color: lightgray;" class="border border-0">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="contenido">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="navbar-brand active" aria-current="page" href="eci.html">ECI</a>
+                      <a class="nav-link" href="#">Médicos</a>
+                      <a class="nav-link" href="#">Quirúrgicos</a>
+                      <a class="nav-link" href="#">Traumáticos</a>
+                      <a class="nav-link" href="#">Transfusionales</a>
+                      <a class="nav-link" href="#">Alergias</a>
+                      <a class="nav-link" href="#">Adicciones</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </div>
+
+        <div class="container">
+            <div class="text-end">
+                <h5>
+                    ANTECEDENTES DE ENFERMEDADES COMUNES DE LA INFANCIA
+                </h5>
+            </div>
+
+            <div style="background-color: teal;" class="text-white">
+                <h5>
+                    Paciente
+                </h5>
+            </div>
+
+            <div class="row" id="paciente" >
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <label for="nombre_completo">Nombre: </label>
+                    <input type="text" name="nombre_completo" id="nombre_completo">
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <label for="edad">Edad: </label>
+                    <input type="text" name="edad" id="edad">
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <label for="sexo">Sexo: </label>
+                    <input type="text" name="sexo" id="sexo">
+                </div>
+            </div>
+            <div class="row" id="paciente">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <label for="nss">NSS: </label>
+                    <input type="text" name="nss" id="nss">
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <label for="consultorio">Consultorio: </label>
+                    <input type="text" name="consultorio" id="consultorio">
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <label for="medico">A. Médico</label>
+                    <input type="text" name="medico" id="medico">
+                </div>
+            </div>
+
+            <div class="text-success" style="background-color: lightgray;">
+                <h5>: : Enfermedades Comunes de la Infancia : :</h5>
+            </div>
+
+            <div class="row" id="enfermedad">
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <label for="enfermedad">Enfermedad</label>
+                    <input type="checkbox" name="enfermedad" id="enfermedad">
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <label for="otra">Otra enfermerdad</label>
+                    <input type="checkbox" name="otra" id="otra">
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <label for="edad_remota">Edad: </label>
+                    <input type="text" name="edad_remota" id="edad_remota">
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <label for="agregar">Agregar </label>
+                    <button type="submit" class="btn btn-warning"></button>
+                </div>
+            </div>
+
+            <div class="row" id="listas">
+                <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8" style="background-color: lightgray;">
+                    <h5 class="text-center text-success">Enfermedad</h5>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4" style="background-color: lightgray;">
+                    <h5 class="text-center text-success">Edad</h5>
+                </div>
+            </div>
+            <div class="row" id="listado">
+                <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                    <ul class="list-group">
+
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <ul class="list-group">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
